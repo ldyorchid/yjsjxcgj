@@ -1,0 +1,258 @@
+{
+    "tecprize":
+
+            {  
+                "name":"相关科技奖励",
+                "list": [
+                    {
+                        "title":"安徽省高等学校重点实验室立项，安徽省教育厅，2015年",
+                        "image":"./png/teacher1/jpeg/support_page-0004_20.jpg"
+                    },
+                    {
+                        "title":"中国图像图形学学会科技进步奖，中国图像图形学学会，2023年",
+                        "image":"./png/teacher1/jpeg/support_page-0008_20.jpg"
+                    },{
+                        "title":"中国发明协会发明创业奖创新奖二等奖，中国发明协会，2024年",
+                        "image":"./png/teacher1/jpeg/support_page-0009_20.jpg"
+                    },
+                    {
+                        "title":"2024年职工技术创新成果奖，中国技术职工协会，2024年",
+                        "image":"./png/teacher1/jpeg/support_page-0010_20.jpg"
+                    },
+                    {
+                        "title":"科技创新奖一等奖，中国科技产业化促进会，2024年",
+                        "image":"./png/teacher1/jpeg/support_page-0011_20.jpg"
+                    },
+                  {
+                    "title": "中国发明协会成果奖，中国发明协会，2024年",
+                    "image": "./png/teacher1/jpeg/support_page-0012_20.jpg"
+                  },{
+                        "title":"安徽省科学技术奖三等奖，安徽省人民政府，2021年",
+                        "image":"./png/teacher1/jpeg/support_page-0012_20.jpg"
+                    }
+                    
+                ]
+            },
+
+    
+    "teachpro":
+
+            {  
+                "name":"教研项目",
+                "list": [
+                    {
+                        "title":"安徽省新时代育人质量工程项目（研究生教育），安徽省教育厅，2024年",
+                        "image":"./png/xm1/jpeg/support_page-0033_20.jpg"
+                    },
+                    {
+                        "title":"安徽省新时代育人质量工程项目（研究生教育），安徽省教育厅，2023年",
+                          "image":"./png/xm1/jpeg/support_page-0037_20.jpg"
+                    },{
+                        "title":"教育部产学合作协同育人项目，教育部高等教育司，2021",
+                        "image":"./png/xm1/jpeg/support_page-0040_20.jpg"
+                    }
+                ]
+            },
+
+   
+    "stuprize":
+
+            {  
+                "name":"研究生获奖情况",
+                "list": [
+                    {
+                        "title":"第十八届“挑战杯”全国大学生课外学术科技作品竞赛“黑科技”展示活动全国一等奖，2023年",
+                        "image":"./png/hj1/jpeg/support_page-0187_20.jpg"
+                    },
+                    {
+                        "title":"第十八届“挑战杯”全国大学生课外学术科技作品竞赛“黑科技”展示活动全国三等奖，2023年",
+                        "image":"./png/hj1/jpeg/support_page-0188_20.jpg"
+                    },{
+                        "title":"全国三维数字化创新设计大赛全国一等奖，2024年",
+                        "image":"./png/hj1/jpeg/support_page-0189_20.jpg"
+                    },
+                    {
+                        "title":"第十一届安徽省大学生课外学术科技作品竞赛省级一等奖，2025年",
+                        "image":"./png/hj1/jpeg/support_page-0190_20.jpg"
+                    },
+                    {
+                        "title":"全国高校AI大赛-大模型应用赛道，安徽省金奖，2025年",
+                        "image":"./png/hj1/jpeg/support_page-0191_20.jpg"
+                    },{
+                        "title":"安徽省计算机学会2024年度优秀硕士学位论文，2024年",
+                        "image":"./png/hj1/jpeg/support_page-0192_20.jpg"
+                    }
+
+                    
+                ]
+            },
+
+     "teachres":{
+                "name":"教学成果奖",
+                "list":[
+                    {
+                        "title":"安徽省教学成果奖二等奖，2024年",
+                        "image":"./png/cg1/jpeg/support_page-0029_20.jpg"
+                    },
+                    {
+                        "title":"安徽省教学成果奖（研究生教育）三等奖，2022年",
+                        "image":"./png/cg1/jpeg/support_page-0030_20.jpg"
+                    },
+                    {
+                        "title":"安徽省教学成果奖三等奖，2020年",
+                        "image":"./png/cg1/jpeg/support_page-0031_20.jpg"
+                    }, {
+                        "title":"安徽省教学成果奖二等奖，2024年",
+                        "image":"./png/cg1/jpeg/support_page-0029_20.jpg"
+                    },
+                    {
+                        "title":"安徽省教学成果奖（研究生教育）三等奖，2022年",
+                        "image":"./png/cg1/jpeg/support_page-0030_20.jpg"
+                    },
+                    {
+                        "title":"安徽省教学成果奖三等奖，2020年",
+                        "image":"./png/cg1/jpeg/support_page-0031_20.jpg"
+                    }, {
+                        "title":"安徽省教学成果奖二等奖，2024年",
+                        "image":"./png/cg1/jpeg/support_page-0029_20.jpg"
+                    },
+                    {
+                        "title":"安徽省教学成果奖（研究生教育）三等奖，2022年",
+                        "image":"./png/cg1/jpeg/support_page-0030_20.jpg"
+                    },
+                    {
+                        "title":"安徽省教学成果奖三等奖，2020年",
+                        "image":"./png/cg1/jpeg/support_page-0031_20.jpg"
+                    }
+
+
+                ]
+     },
+     "Patent":{
+
+        "name":"发明专利与学术论文",
+        "list":[
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0046_20.jpg"
+                    },
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0047_20.jpg"
+                    },{
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0048_20.jpg"
+                    },{
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0049_20.jpg"
+                    },
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0050_20.jpg"
+                    },{
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0051_20.jpg"
+                    },
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0052_20.jpg"
+                    },{
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0053_20.jpg"
+                    },
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/paper1/jpeg/support_page-0054_20.jpg"
+                    },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0055_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0056_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0057_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0058_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0059_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0060_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0061_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0062_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0063_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0064_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0065_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0066_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0067_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0068_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0069_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0070_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0071_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0072_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0073_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0074_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0075_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0076_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0077_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0078_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0079_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0080_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0081_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0082_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0083_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0084_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0085_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0086_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0087_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0088_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0089_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0090_20.jpg" },
+                    { "title": "全国研究生XX大赛一等奖，2023年", "image": "./png/paper1/jpeg/support_page-0091_20.jpg" } 
+
+        ]
+
+
+     },
+     "used":{
+        "name":"推广应用及媒体报道情况",
+
+        "list":[
+                {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0193_20.jpg"
+                    },
+                     {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0194_20.jpg"
+                    },
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0195_20.jpg"
+                    },{
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0196_20.jpg"
+                    },
+                     {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0197_20.jpg"
+                    }, {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0200_20.jpg"
+                    }
+        ]
+     },
+     "mediarep":{
+        "name":"推广应用及媒体报道情况",
+
+        "list":[
+
+                    {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0198_20.jpg"
+                    },
+                     {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0199_20.jpg"
+                    },
+                   {
+                        "title":"全国研究生XX大赛一等奖，2023年",
+                        "image":"./png/mt1/jpeg/support_page-0201_20.jpg"
+                    }
+
+        ]
+     }
+
+}

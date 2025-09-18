@@ -1,0 +1,2172 @@
+/*header*/
+.header{
+	height: auto;
+}
+/*logo*/
+.header .logo{
+	width: 303px;
+	/* height: 79px; */
+	/* margin-top: 20px; */
+}
+.header .logo img{
+	display: block;
+}
+/*right*/
+.header .hea-r{
+	height: auto;
+	text-align: right;
+}
+.header .hea-r .hea-nav{
+	height: 48px;
+display:none;
+	line-height: 48px;
+}
+.header .hea-r .hea-nav a{
+	font-size: 12px;
+	color: #333;
+}
+.header .hea-r .hea-nav span{
+	width: 1px;
+	height: 13px;
+	display: inline-block;
+	background: #666;
+	margin: -2px 10px;
+	*margin: 2px 10px;
+}
+.header .hea-r .hea-nav a:hover{
+	color: #29a7b3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮疵兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭� */
+.header .hea-r .hea-search{
+	width: 200px;
+	height: 38px;
+	/* border: 1px solid #e5e5e5; */
+	margin: 40px 0px 18px 0;
+	text-align: left;
+	/* background: rgba(255,255,255,0.9); */
+}
+.header .hea-r .hea-search .sea-text{
+	width: 165px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	color: #d1d1d1;
+	background: none;
+	font-size: 14px;
+	text-indent: 20px;
+}
+.header .hea-r .hea-search .sea-but{
+	width: 34px;
+	height: 38px;
+	float: left;
+	background: url(../images/icon.png)  0 9px no-repeat;
+	cursor: pointer;
+}
+/*nav*/
+.Hide {
+	display:none;
+}
+#nav{
+	margin-bottom: 18px;
+}
+#nav .Toolbar1 {
+	background: #0c5f67;
+	height: 46px;
+}
+#nav .Toolbar1 .CentreBox {
+	width: 1200px;
+	height: 46px;
+}
+
+#nav .Toolbar1 .CentreBox .Menu {
+	height: 46px;
+	width: 100%;
+	float: left;
+}
+#nav .Toolbar1 .CentreBox .Menu .List1 {
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	height: 46px;
+	position: relative;width:100%;
+	left: 0;
+}
+#nav .Toolbar1 .CentreBox .Menu .List1 li {
+	width: 10%;
+	float: left;
+	height: 46px;
+	line-height: 46px;
+}
+#nav .Toolbar1 .CentreBox .Menu .List1 .Select {
+	background:#29a7b3 url(../images/nav-bj.png) no-repeat center;
+}
+
+#nav .Toolbar1 .CentreBox .Menu .List1 a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+
+
+#nav .Toolbar2 {
+	width:1198px;
+	height: 26px;
+	clear: both;
+	border: 1px solid #e8e8e8;
+	border-top: none;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+#nav .Toolbar2 .CentreBox {
+	height: 20px;
+	width: 100%;
+}
+#nav .Toolbar2 .CentreBox .Menu {
+	position: relative;
+	overflow: hidden;
+	height: 34px;
+	width: 910px;
+	left: 12px;
+	float: left;
+}
+#nav .Toolbar2 .CentreBox .Menu ul {
+	list-style-type: none;
+	height: 20px;
+	position: absolute;
+}
+#nav .Toolbar2 .CentreBox .Menu ul li {
+	float: left;
+	height: 20px;
+	width: auto;
+	text-align: center;
+	line-height: 20px;
+	/*padding: 0 10px;*/
+}
+#nav .Toolbar2 .CentreBox .Menu ul li a {
+	height: 20px;
+	color: #848484;
+	font-size: 14px;
+	display: inline-block;
+	float: left;
+	padding: 0 12px;
+}
+#nav .Toolbar2 .CentreBox .Menu ul li.Select a{
+	color: #fff;
+	background:#29a7b3;
+	border-radius: 3px;
+	-moz-transition:none;
+	-webkit-transition:none;
+	-o-transition:none;
+	transition:none;
+}
+
+#nav .Toolbar2 .CentreBox .Menu ul span{
+	width: 1px;
+	height: 15px;
+	background: #848484;
+	display: block;
+	float: left;
+	margin: 3px 8px ;
+}
+/*banner*/
+.banner0{  
+	height:378px; 
+	overflow:hidden; 
+	position:relative; 
+	margin-bottom: 18px;
+}
+.banner0 .hd{ 
+	height:8px; 
+	overflow:hidden; 
+	position:absolute; 
+	right:6px; 
+	bottom:21px; 
+	z-index:1; 
+}
+.banner0 .hd ul{ 
+	overflow:hidden; 
+	zoom:1; 
+	float:left;  
+}
+.banner0 .hd ul li{ 
+	float:left; 
+	margin-right:14px;  
+	width:50px; 
+	height:8px; 
+	background: url(../images/ico1.png) repeat-x; 
+	cursor:pointer; 
+	_background:#eee;
+}
+.banner0 .hd ul li.on{ 
+	background:#fff; 
+}
+.banner0 .bd{ 
+	position:relative; 
+	height:100%; 
+	z-index:0;   
+}
+.banner0 .bd li{ 
+	zoom:1; 
+	vertical-align:middle; 
+}
+.banner0 .bd li p{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: rgba(0,0,0,0.45);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#66000000');      /*IE6,IE7*/ 
+    -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#66000000')";      /*IE8*/
+	font-size: 14px;
+	color: #fff;
+	text-indent: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.banner0 .bd img{ 
+	width:1200px;
+	height: 378px;
+	display:block;  
+}
+/*banner1*/
+.banner1 .hd,.banner2 .hd{
+	height: 14px;
+	bottom: 18px;
+	right: 13px;
+}
+.banner1 .hd ul li,.banner2 .hd ul li{ 
+	float:left; 
+	margin-right:6px;  
+	width:14px; 
+	height:14px; 
+	background: url(../images/icon1.png) 2px 2px no-repeat;
+	cursor:pointer; 
+}
+.banner1 .hd ul li.on,.banner2 .hd ul li.on{ 
+	background: url(../images/icon2.png) no-repeat;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮趁兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮⒚兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩€毬吢久冣€毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.banner0 .prev,
+.banner0 .next{ 
+	position:absolute; 
+	left:0; 
+	top:50%; 
+	margin-top:-37px; 
+	display:block; 
+	width:40px; 
+	height:74px; 
+	background:url(../images/next.png) no-repeat; 
+}
+.banner0 .next{ 
+	left:auto; 
+	right:0; 
+	background-position: right 0; 
+}
+.banner0 .prev:hover,
+.banner0 .next:hover{ 
+	background-position: 0 bottom;
+	-moz-transition:none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;  
+}
+.banner0 .next:hover{
+	background-position: right bottom;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮得兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙垄芒鈥毬呪€溍兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬� 脙茠脗垄脙垄芒鈧∶偮兟⒚⑩偓啪脗垄脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭� */
+.main{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+/*left*/
+.main .main-l{
+	width: 210px;
+		height: auto;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮�*/
+.college{
+	width: 100%;
+	height: auto;
+	background: #fbfbfb;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-bottom: 14px;
+}
+.college h2{
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	background: url(../images/icon3.png) repeat-x;
+	font-size: 18px;
+	color: #fff;
+	text-indent: 12px;
+}
+.college h2 a{
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 12px;
+}
+.college h2 a:hover{
+	color: #eee;
+}
+.college p{
+	font-size: 14px;
+	color: #333;
+	text-indent: 2em;
+	line-height: 26px;
+	margin: 14px 12px 0;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.college p a{
+	color: #333;
+}
+.college p a:hover{
+	color: #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮疵兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.main .main-l .on-site{
+	width: 100%;
+	height: auto;
+	padding-bottom: 11px;
+	border-top: 3px solid #29A7B3;
+	border-radius: 5px;
+	margin-top: 15px;
+	background: #fbfbfb;
+}
+.main .main-l .on-site h2{
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	text-indent: 12px;
+	font-size: 18px;
+	color: #29A7B3;
+}
+.main .main-l .on-site .search{
+	width: 154px;
+	height: 28px;
+	border: 1px solid #eee;
+	margin: 0 auto;
+}
+.main .main-l .on-site .search .site-sea{
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	text-indent: 8px;
+	font-size: 14px;
+	color: #333;
+	float: left;
+	*width: 121;
+	*padding-left: 0px;
+}
+.main .main-l .on-site .search .site-but{
+	width: 51px;
+	height: 28px;
+	font-size: 16px;
+	color: #f3f3f3;
+	float: left;
+	cursor: pointer;
+	background: url(../images/icon4.png) repeat-x;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�  tab脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.scholar{ 
+	width:100%; 
+	margin-top: 15px;   
+}
+.scholar .hd{ 
+	height:40px; 
+	line-height:40px;  
+	position:relative; 
+}
+.scholar .hd ul{ 
+	float:left;  
+	position:absolute; 
+	left:0; 
+	top:0; 
+	height:40px;   
+}
+.scholar .hd ul li{ 
+	width: 102px;
+	float:left;  
+	cursor:pointer;  
+	border: 1px solid #eee;
+	border-bottom: none;
+	margin-right: 2px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url(../images/ico6.png) repeat-x;
+	font-size: 18px;
+	color: #333;
+	text-align: center;
+	cursor: pointer;
+}
+.scholar .hd ul li.on{ 
+	background: url(../images/icon5.png) repeat-x;
+	color: #fff; 
+}
+.scholar .bd ul{
+	width:190px;
+	zoom:1;
+	/* border: 1px solid #eee; */
+	border-top: none;
+	padding: 10px 9px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.scholar .bd li{ 
+	width: 100%;
+	height:30px;  
+ }
+.scholar .bd li a{
+	height:30px; 
+	line-height:30px;
+	font-size: 14px;
+	padding-left: 15px;
+	color: #333; 
+	display: inline-block;
+	background: url(../images/ico2.png) 0 13px no-repeat;
+	overflow: hidden; /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮�*/
+	text-overflow: ellipsis;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+	white-space: nowrap;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮�*/
+	width: 150px;
+ }
+ .scholar .bd li a:hover{
+  	color: #29A7B3;
+  	background: url(../images/ico2-hov.png) 0 13px no-repeat;
+  }
+  /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.main .main-l .mailWrap,
+.main .main-l .departWrap,
+.main .main-r .serverWrap{
+	width: 208px;
+	height: auto;
+	border: 1px solid #ddd;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+.main .main-l .mail,
+.main .main-r .server{
+	width: 150px;
+	height: auto;
+	border: 1px solid #fff;
+	padding: 10px 13px;
+	background: #f7f7f7;
+	border-radius: 5px;
+}
+.main .main-l .mail ul{
+	width: 100%;
+	height: auto;
+}
+.main .main-l .mail ul li{
+	width: 75px;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.main .main-l .mail ul li p{
+	width: 100%;
+	font-size: 16px;
+	color: #29A7B3;
+	height: 24px;
+	line-height: 24px;
+}
+.main .main-l .mail,
+.main .main-r .server{
+	width: 180px;
+	height: auto;
+	border: 1px solid #fff;
+	padding: 10px 13px;
+	background: #f7f7f7;
+	border-radius: 5px;
+}
+.main .main-l .mail ul{
+	width: 100%;
+	height: auto;
+}
+.main .main-l .mail ul li{
+	width: 75px;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin-right: 30px;
+}
+.main .main-l .mail ul li p{
+	width: 100%;
+	font-size: 16px;
+	color: #29A7B3;
+	height: 24px;
+	line-height: 24px;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮趁兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭兟⒚⑩€毬� 脙茠脗垄脙垄芒鈧∶偮兟⒚⑩偓啪脗垄*/
+.main .main-l .depart{
+	width: 190px;
+	height: auto;
+	border: 1px solid #fff;
+	padding: 4px 8px;
+	background: #f7f7f7;
+	border-radius: 5px;
+}
+.main .main-l .depart h2,
+.main .main-r .server h2{
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 16px;
+}
+.main .main-l .depart h2 span,
+.main .main-r .server h2 span{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	color: #29A7B3;
+	display: inline-block;
+} 
+.main .main-l .depart ul,
+.main .main-r .server ul{
+ 	width: 186px;
+ 	height: auto;
+ 	margin: 0 auto;
+ }
+.main .main-l .depart ul li,
+.main .main-r .server ul li{
+	width: 184px;
+	height: 42px;
+	margin-bottom: 8px;
+	border: 1px solid #229ca7;
+	border-radius: 5px;
+}
+.main .main-l .depart ul li a,
+.main .main-r .server ul li a{
+	width: 182px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	border: 1px solid #77c7c9;
+	border-radius: 5px;
+	background: url(../images/index-bj.png) repeat-x;
+}
+.main .main-l .depart ul li a em,
+.main .main-r .server ul li a em{
+	width: 162px;
+	padding-left: 20px;
+	height: 40px;
+	display: inline-block;
+	background: url(../images/ico3.png) 6px 16px no-repeat;
+}
+
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮�*/
+.tourists{
+	width: 190px;
+	margin:0 auto;  
+	height: 225px; 
+	overflow:hidden; 
+	position:relative;
+	top: 15px;  
+	padding-bottom: 15px;
+}
+		
+.tourists .bd{ 
+	height: 225px;	
+}
+.tourists .infoList li{
+	width: 100%;
+	zoom:1;
+	height: 99px;
+	margin-bottom: 17px;
+	float: left;
+}
+.tourists .infoList li a.info-pic{
+	width: 77px;
+	height: 99px;
+	float: left;
+	margin-right: 12px;
+}
+.tourists .infoList li a.info-pic img{
+	width: 100%;
+	display: block;
+}
+.tourists .infoList li a.info-name{
+	width: 100px;
+	height: auto;
+	font-size: 18px;
+	color: #333;
+	float: left;
+}
+.tourists .infoList li a.info-name:hover{
+	color: #29A7B3;
+}
+.tourists .infoList li h4{
+	width: 100px;
+	height: auto;
+	font-size: 14px;
+	color: #666;
+	float: left;
+	margin-top: 8px;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.adver{
+	width: 210px;
+	height: 64px;
+	margin-top: 15px;
+}
+.adver img{
+	width: 100%;
+	display: block;
+}
+.adver a:hover{
+	opacity: 0.8; 
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮裁兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙垄芒鈥毬呪€溍兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮�*/
+.college .coll-bom{
+	width: 184px;
+	height: auto;
+	border: 1px solid #EEE;
+	border-top: none;
+	padding: 18px 12px 5px;
+}
+.college .coll-bom ul{
+	width: 100%;
+	height: auto;
+}
+.college .coll-bom ul li{
+	width: 182px;
+	height: 40px;
+	border: 1px solid #ddd;
+	margin-bottom: 13px;
+	border-radius: 5px;
+}
+.college .coll-bom ul li a{
+	width: 157px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #fff;
+	background: #f7f7f7 url(../images/ico7.png) 8px 14px no-repeat;
+	display: inline-block;
+	padding-left: 23px;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #333;
+}
+.college .coll-bom ul li a:hover{
+	color: #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬� 脙茠脗垄脙垄芒鈧∶偮兟⒚⑩偓啪脗垄脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙垄芒鈥毬呪€溍兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.link{
+	width: 100%;
+	height: auto;
+	margin-top: 9px;
+}
+.link h2{
+	width: 100%;
+	height: 37px;
+	border-bottom: 1px solid #eee;
+}
+.link h2 span{
+	width:80px ;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	color: #515151;
+	display: block;
+	text-align: center;
+	border-bottom: 2px solid #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮�*/
+
+.choice{
+	position:relative;
+	margin-top: 12px;
+	z-index: 99;
+}
+.select dt{
+	height:32px;
+	display:inline-block;
+	border:1px solid #eee;
+	background:url(../images/select-bj.png) 173px 0 no-repeat;
+	line-height:32px;
+	font-size: 14px;
+	cursor:pointer;
+	text-indent: 5px;
+	width:193px;
+	color: #666;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	position:relative;
+	z-index:99;
+	padding-left: 15px;
+}
+.select dd{
+	position:absolute;
+	left:0;
+	top:33px;
+	border:1px solid #eee;
+	background:#fff;
+	display:none;
+	font-size: 14px;
+	z-index: 100;
+	*z-index: 99999;
+}
+.select dd ul{
+	width:208px;
+	max-height:250px;
+	/*overflow:auto;*/
+}
+.select dd ul li a{
+	line-height:28px;
+	display:block;
+	padding-left: 20px;
+    color: #666;
+}
+.select dd ul li a:hover{
+	background:#fafafa;
+}
+/*center*/
+.main .main-c{
+	width: 442px;
+	height: auto;
+	/*background: saddlebrown;*/
+	margin-left: 14px;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙鈥毭偮久兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.fonus{ 
+	width:100%; 
+	height:276px; 
+	overflow:hidden; 
+	position:relative;
+}
+.fonus .hd{ 
+	height:12px; 
+	overflow:hidden; 
+	position:absolute; 
+	right:10px; 
+	bottom:14px; 
+	z-index:1; 
+}
+.fonus .hd ul{ 
+	overflow:hidden; 
+	zoom:1; 
+	float:left;  
+}
+.fonus .hd ul li{ 
+	float:left; 
+	margin-right:6px;  
+	width:12px; 
+	height:12px;  
+	cursor:pointer; 
+	background: #bbb;
+	border-radius: 50px;
+}
+.fonus .hd ul li.on{ 
+	background:#f00; 
+}
+.fonus .bd{ 
+	position:relative; 
+	height:100%; 
+	z-index:0;   
+}
+.fonus .bd li{ 
+	zoom:1; 
+	vertical-align:middle; 
+}
+.fonus .bd img{ 
+	width:100%; 
+	height:276px; 
+	display:block;  
+}
+.fonus .bd li p{
+	width: 100%;
+	text-indent: 12px;
+	height: 40px;
+	line-height: 42px;
+	background: rgba(0,0,0,0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#66000000');/*IE6,IE7*/ 
+    -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#66000000')";/*IE8*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.thumbnail{
+	margin:15px auto 0;  
+	width:100%;   
+	position:relative;  
+	overflow:hidden;  
+	zoom:1;   
+}
+.thumbnail .hd{ 
+	width:100%;  
+	overflow:hidden; 
+}
+.thumbnail .hd ul{ 
+	margin-right:-5px;  
+	overflow:hidden; 
+	zoom:1; 
+}
+.thumbnail .hd ul li{ 
+	padding-top:10px; 
+	float:left;  
+	text-align:center;  
+}
+.thumbnail .hd ul li img{ 
+	width:82px; 
+	height:56px; 
+	border:2px solid #eee; 
+	cursor:pointer; 
+	margin-right:3px;   
+}
+.thumbnail .hd ul li.on{ 
+	background:url("images/icoUp.gif") no-repeat center 0; 
+}
+.thumbnail .hd ul li.on img{ 
+	border-color:#29A7B3;  
+}
+.thumbnail .bd li{ 
+	vertical-align:middle; 
+}
+.thumbnail .bd img{ 
+	width:100%; 
+	display:block;  
+}/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙鈥毭偮久兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.main .main-c .news{
+	height: auto;
+	margin-top: 15px;
+	padding: 13px;
+	background: #fbfbfb;
+}
+.main .main-c .news h2{
+	font-size: 18px;
+	color: #333;
+}
+.main .main-c .news h2 span{
+	display: inline-block;
+	float: left;
+}
+.main .main-c .news h2 a{
+	float: right;
+	color: #666;
+	font-size: 12px;
+}
+.main .main-c .news h2 a:hover{
+	color: #229CA7;
+}
+.main .main-c .news ul{
+	width: 100%;
+	height: auto;
+	margin-top: 18px;
+}
+.main .main-c .news ul li{
+	width: 32%;
+	margin-right: 2%;
+	height: auto;
+	float: left;
+}
+.main .main-c .news ul li a{
+	height: auto;
+	display: block;
+}
+.main .main-c .news ul li a img{
+	width: 100%;
+}
+.main .main-c .news ul li a.new-pic img{
+	width: 100%;
+	display: block;
+}
+.main .main-c .news ul li a h3{
+	font-size: 14px;
+	color: #333;
+	margin-top: 15px;
+}
+.main .main-c .news ul li a:hover h3{
+	color: #29A7B3;
+}
+.main .main-c .news ul li a:hover img{
+	opacity: 0.9;
+}
+.main .main-c .news ul li p{
+	font-size: 12px;
+	color: #cecece;
+	margin-top: 2px;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.compre-tab{ 
+	width:442px;
+	margin-top: 15px;
+}
+.compre-tab .hd{ 
+	height:42px; 
+	line-height:42px;    
+	position:relative; 
+}
+.compre-tab .hd ul{ 
+	float:left;  
+	position:absolute; 
+	left:0; 
+	top:0; 
+	height:42px;   
+}
+.compre-tab .hd ul li{ 
+	float:left; 
+	width: 141px;
+	height:42px; 
+	line-height:42px; 
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	margin-right: 9.5px;
+	background:url(../images/tab-bj.png) no-repeat;  
+	cursor:pointer;  
+}
+.compre-tab .bd ul{
+	width: 420px; 
+	height: auto;
+	padding: 10px;
+	zoom:1;
+	border: 1px solid #eee;
+	margin-top: 10px;
+	  
+}
+.compre-tab .bd li{ 
+	width: 100%;
+	height: auto;  
+}
+.compre-tab .bd li .bd-info{
+	width: 100%;
+	height: auto;
+	margin-bottom: 35px;
+}
+.compre-tab .bd li .bdin-pic{
+	width: 128px;
+	height: 82px;
+}
+.compre-tab .bd li .bdin-pic img{
+	width: 128px;
+	height: 82px;
+	display: block;
+}
+.compre-tab .bd li .bdin-text{
+	width: 282px;
+	height: auto;
+}
+.compre-tab .bd li .bdin-text h2 a{
+	color: #333;
+	font-size: 16px;
+	overflow: hidden; /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮�*/
+	text-overflow: ellipsis;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+	white-space: nowrap;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮�*/
+	width: 100%;
+	display: block;
+}
+.compre-tab .bd li .bdin-text h2 a:hover{
+	color: #29A7B3;
+}
+.compre-tab .bd li .bdin-text p{
+	font-size: 14px;
+	color: #666;
+	margin-top: 15px;
+}
+.compre-tab .bd li .bdin-text p a{
+	color:#ffb64d ;
+}
+.compre-tab .bd li .bdin-text p a:hover{
+	color: #29A7B3;
+}
+.compre-tab .bd li ol{
+	width: 414px;
+	height: auto;
+	border-top: 1px dashed #eee;
+	padding: 6px 3px;
+}
+.compre-tab .bd li ol li{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.compre-tab .bd li ol li a{
+	color: #333;
+	font-size: 14px;
+	float: left;
+	padding-left: 10px;
+	background: url(../images/ico8.png) 0 14px no-repeat;
+}
+.compre-tab .bd li ol li a:hover{
+	color: #29A7B3;
+	background: url(../images/ico8-hov.png) 0 14px no-repeat;
+}
+.compre-tab .bd li ol li span{
+	color: #c3c3c3;
+	font-size: 13px;
+	float: right;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓鹿脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭�  脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.school-tab{
+	width: 442px;
+	margin-top: 15px;
+}
+.school-tab .hd{
+	width: 100%;
+	height:36px;
+	position:relative;
+	background: #0b6cb8;
+}
+.school-tab .hd .more {
+	height: 36px;
+	line-height: 36px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	display: inline-block;
+	text-align: right;
+}
+.school-tab .hd .more a {
+	color: #fff; 
+	font-size: 12px;
+}
+.school-tab .hd .more a:hover{
+	color: #eee;
+}
+.school-tab .hd ul {
+	float:left;  
+	position:absolute; 
+	left:10px; 
+	top:0; 
+	height:42px;
+}
+.school-tab .hd ul li {
+	float:left;
+	width: 80px;
+	height:24px;
+	line-height:22px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	cursor:pointer;
+	margin-top: 6px;
+}
+.school-tab .hd ul li.on {
+	background: #0d5a96;
+	border-radius: 5px;
+}
+.school-tab .bd ul{
+	width: 422px;
+	height: auto;
+	padding: 10px;
+	zoom:1;
+	/* background: #eff5fc; */
+}
+.school-tab .bd li{ 
+	width: 100%;
+	height: auto; 
+	float: left; 
+}
+.school-tab .bd li a{
+	width: 407px;
+	padding-left: 15px;
+	color: #333;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	background:url(../images/ico2.png) 0 13px no-repeat;
+	display: inline-block;
+	float: left;
+}
+.school-tab .bd li a em{
+	display: inline-block;
+	float: left;
+}
+.school-tab .bd li a:hover{
+	color: #29A7B3;
+	background: url(../images/ico2-hov.png) 0 13px no-repeat;
+}
+.school-tab .bd li a span{
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	color: #666;
+}
+.school-tab .bd li a:hover span{
+	color: #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.school-news{
+	width: 420px;
+	height: auto;
+	padding: 0 10px;
+	/* border: 1px solid #eee; */
+	margin-top: 15px;
+}
+.school-news h2{
+	width: 100%;
+	height: 40px;
+	/* line-height: 40px; */
+	/* padding-bottom: 8px; */
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+}
+.school-news h2 span{
+	height: 40px;
+	margin-left: 10px;
+	line-height: 40px;
+	display: block;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+}
+.school-news h2 a{
+	font-size: 12px;
+	color: #666;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	float: right;
+}
+.school-news h2 a:hover{
+	color: #29A7B3;
+}
+.school-news ul{
+	width: 100%;
+	height: auto;
+}
+.school-news ul li{ 
+	width: 100%;
+	height: auto; 
+	float: left; 
+}
+.school-news ul li a{
+	width: 405px;
+	padding-left: 15px;
+	color: #333;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	background: url(../images/ico2.png) 0 12px no-repeat;
+	display: inline-block;
+	float: left;
+}
+.school-news ul li a em{
+	display: inline-block;
+	float: left;
+}
+.school-news ul li a:hover{
+	color: #29A7B3;
+	background: url(../images/ico2-hov.png) 0 12px no-repeat;
+}
+.school-news ul li a span{
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	color: #666;
+}
+.school-news ul li a:hover span{
+	color: #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓鹿脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� */
+.notice{
+	width: 100%;
+	height: auto;
+	margin-top: 24px;
+}
+.notice h2{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #eee;
+}
+.notice h2 span{
+	margin-left: 10px;
+	display: block;
+	float: left;
+	font-size: 18px;
+	color: #333;
+}
+.notice h2 a{
+	display: block;
+	float: right;
+	font-size: 12px;
+	color: #666;
+}
+.notice h2 a:hover{
+	color: #29A7B3;
+}
+.notice .no-l{
+	width: 156px;
+	height: auto;
+	border-right: 1px dashed #eee;
+	padding-right: 6px;
+	margin-top: 20px;
+}
+.notice .no-l h3{
+	color: #333;
+	font-size: 16px;
+	overflow: hidden; /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮�*/
+	text-overflow: ellipsis;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+	white-space: nowrap;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮�*/
+	width: 99%;
+}
+.notice .no-l h4{
+	font-size: 12px;
+	color: #c1c1c1;
+	margin: 2px 0 8px;
+}
+.notice .no-l p{
+	color: #666;
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 26px;
+}
+.notice .no-l p a{
+	color: #29A7B3;
+}
+.notice .no-l p a:hover{
+	color: #ffb64d;
+}
+.notice .no-r{
+	width: 269px;
+	height: auto;
+	margin-top: 20px;
+}
+.notice .no-r ul{
+	width: 100%;
+	height: auto;
+}
+.notice .no-r ul li{ 
+	width: 100%;
+	height: auto; 
+	float: left; 
+	padding-bottom: 10px;
+}
+.notice .no-r ul li a{
+	width: 259px;
+	padding-left: 10px;
+	color: #333;
+	font-size: 14px;
+	background:url(../images/ico8.png) 0 10px no-repeat;
+	display: inline-block;
+	float: left;
+}
+.notice .no-r ul li a em{
+	display: inline-block;
+	float: left;
+	overflow: hidden; /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮�*/
+	text-overflow: ellipsis;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+	white-space: nowrap;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮�*/
+	width: 172px;
+}
+.notice .no-r ul li a:hover{
+	color: #29A7B3;
+	background: url(../images/ico8-hov.png) 0 10px no-repeat;
+}
+.notice .no-r ul li a span{
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	color: #666;
+}
+.notice .no-r ul li a:hover span{
+	color: #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮裁兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭� */
+.wonder{ 
+	width:100%;  
+	overflow:hidden; 
+	margin-top: 15px;  
+	position:relative; 
+}
+.wonder .hd{ 
+	overflow:hidden;  
+	height:88px;   
+	z-index: 99; 
+	background: #fbfbfb;
+	border-radius: 5px; 
+}
+.wonder .hd .prev,.wonder .hd .next{ 
+	display:block;  
+	width:13px; 
+	height:26px; 
+	float:right;    
+	overflow:hidden;
+	cursor:pointer; 
+	background:url(../images/next1.png) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 32px;
+}
+.wonder .hd .next{ 
+	background-position:right 0; 
+	position: absolute;
+	left:100%; 
+	margin-left: -13px;
+}
+.wonder .hd .prev:hover,.wonder .hd .next:hover{ 
+	background-position:0 bottom;
+	-moz-transition:none;
+	-webkit-transition:none;
+	-o-transition: none;
+	transition: none; 
+}
+.wonder .hd .next:hover{ 
+	background-position:right bottom; 
+}
+.wonder .hd ul{ 
+	float:right; 
+	overflow:hidden; 
+	zoom:1; 
+	margin-top:10px; 
+	zoom:1; 
+}
+.wonder .hd ul li{ 
+	float:left;  
+	width:9px; 
+	height:9px; 
+	overflow:hidden;
+	margin-right:5px; 
+	text-indent:-999px; 
+	cursor:pointer; 
+	background:url("images/icoCircle.gif") 0 -9px no-repeat; 
+}
+.wonder .hd ul li.on{ 
+	background-position:0 0; 
+}
+.wonder .bd{ 
+	width: 416px;
+	position: absolute;
+	top: 0;
+	left: 0; 
+	z-index: 100;
+	margin: 10px 13px;
+}
+.wonder .bd ul{ 
+	width: 416px;
+	overflow:hidden; 
+	zoom:1; 
+}
+.wonder .bd ul li{ 
+	width: 104px; 
+	float:left; 
+	_display:inline;
+	overflow:hidden; 
+	text-align:center;
+	/*margin-right: 6px;*/ 
+}
+.wonder .bd ul li .pic-img{
+	width:100px ;
+	height: auto;
+	margin:0 2px;
+}
+.wonder .bd ul li a{ 
+	width: 92px;
+	height: 60px;
+	padding: 3px;
+	border: 1px solid #ddd;
+	text-align:center; 
+	display: block;	
+	background: #fff;
+}
+.wonder .bd ul li a img{ 
+	width:92px; 
+	height:60px; 
+	display:block;  
+}
+.wonder .bd ul li a:hover img{ 
+	border-color:#999;  
+}
+.wonder .bd ul li .title{ 
+	line-height:24px;   
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙垄芒鈥毬呪€溍兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.link p{
+	width: 100%;
+	margin-top: 15px;
+	line-height: 32px;
+	*line-height: 30px;
+	*margin-top: 12px;
+}
+.link p a{
+	display: inline-block;
+	/*float: left;*/
+	color: #666;
+	font-size: 14px;
+	margin-right: 24px;
+}
+.link p a:hover{
+	color: #29A7B3;
+}
+/*right*/
+.main .main-r{
+          float:right;
+          width: 320px;
+          height: auto;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.school-news1{
+	width: 298px;
+	margin-top: 0;
+	_width:218px
+}
+.school-news1 h2{
+	_width:298px;
+}
+.school-news1 ul li a{
+	width: 288px;
+	padding-left: 15px;
+}
+.school-news1 ul li a em{
+	overflow: hidden; /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮�*/
+	text-overflow: ellipsis;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+	white-space: nowrap;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮�*/
+	width: 200px;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓鹿脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮裁兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.lecture{
+	width: 100%;
+	height: auto;
+	margin-top: 9px;
+}
+.lecture h2{
+	width: 100%;
+	height: 37px;
+	border-bottom: 1px solid #eee;
+}
+.lecture h2 span{
+	width: 110px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	color: #515151;
+	display: block;
+	border-bottom: 2px solid #29A7B3;
+	float: left;
+}
+.lecture h2 a{
+	float: right;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+	color: #666;
+	font-size: 12px;
+}
+.lecture h2 a:hover{
+	color: #229CA7;
+}
+.lecture ul{
+	width: 100%;
+}
+.lecture ul li{
+	width: 100%;
+	height: 56px;
+	float: left;
+	padding: 15px 0;
+	border-bottom: 1px dashed #eee;
+}
+.lecture ul li a{
+	width: 100%;
+	height: 56px;
+	display: inline-block;
+	cursor: pointer;
+}
+.lecture ul li h3{
+	width: 43px;
+	height: 56px;
+	float: left;
+}
+.lecture ul li h3 span,
+.lecture ul li h3 em{
+	width: 43px;
+	height: 28px;
+	display: inline-block;
+	background: #f8f8f8;
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	line-height: 28px;
+}
+.lecture ul li h3 em{
+	background: #ccc;
+	color: #fff;
+}
+.lecture ul li p{
+	width: 257px;
+	font-size: 14px;
+	color: #333;
+	float: right;
+	line-height: 20px;
+}
+.lecture ul li b{
+	width: 257px;
+	color: #c8c8c8;
+	font-size: 12px;
+	font-weight: normal;
+	display: inline-block;
+	float: right;
+}
+.lecture ul li a:hover h3 em{
+	background: #29A7B3;
+}
+.lecture ul li a:hover p{
+	color:#29A7B3;
+}/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮裁兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.lecture-info{
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+.lecture-info h2{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+}
+.lecture-info h2 i{
+	display: inline-block;
+	float: left;
+	padding-top: 12px;
+}
+.lecture-info h2 span{
+	color: #333;
+	font-size: 18px;
+	display: inline-block;
+	float: left;
+}
+.lecture-info h2 a{
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+	float: right;
+}
+.lecture-info h2 a:hover{
+	color: #29A7B3;
+}
+.lecture-info ul li{
+	width: 100%;
+	height: auto;
+	margin-bottom: 13px;
+	float: left;
+}
+.lecture-info ul li a{
+	height: 54px;
+	text-align: left;
+	font-size: 14px;
+	color: #333;
+	line-height: 54px;
+	padding-left: 10px;
+	display: block;
+	border-left: 5px solid #29A7B3;
+	background: #eee url(../images/ico11.png) right 6px no-repeat;
+}
+.lecture-info ul li a:hover{
+	color: #29A7B3;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮得兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙鈥毭偮�*/
+.college ol{
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+.college ol li{
+	width: 87px;
+	height: auto;
+	float: left;
+	margin: 0 9.8px;
+	_margin:0 7.5px;
+}
+.college ol li a h1{
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	margin-top: 6px;
+	text-align: center;
+	font-size: 16px;
+	color: #333;
+}
+.college ol li a img{
+	width: 100%;
+	height: auto;
+}
+.college ol li a:hover h1{
+	color: #29A7B3;
+}
+.college ol li a:hover img{
+	opacity: 0.9;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓鹿脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� */
+.ma-radv{
+	width: 100%;
+	height: auto;
+}
+.ma-radv ul li{
+	width: 148px;
+	height: 123px;
+	margin-top: 18px;
+}
+.ma-radv ul li img{
+	width: 148px;
+	height: 123px;
+	display: block;
+}
+.ma-radv ul li a:hover{
+	opacity: 0.8;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓鹿脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭�  脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.recomm{
+	width: 100%;
+	height: auto;
+}
+.recomm ul li{
+	width: 100%;
+	height: 100px;
+	margin-top: 15px;
+	position: relative;
+}
+.recomm ul li img{
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+.recomm ul li p{
+	width:300px;
+	height: 62px;
+	line-height: 62px;
+	font-size: 18px;
+	color: #fff;
+	padding-left: 20px;
+	background: rgba(0,0,0,0.46);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -31px;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭兟⒚⑩€毬� 脙茠脗垄脙垄芒鈧∶偮兟⒚⑩偓啪脗垄*/
+.main .main-r .serverWrap{
+	width: 318px;
+}
+.main .main-r .server{
+	width: 300px;
+	padding: 0 8px 10px;
+}
+.main .main-r .server h2{
+	height: 47px;
+}
+.main .main-r .server h2 span{
+	height: 46px;
+	line-height: 46px;
+} 
+.main .main-r .server ul{
+	width: 298px;
+}
+.main .main-r .server ul li{
+	width: 296px;
+}
+.main .main-r .server ul li a{
+	width: 294px;
+}
+.main .main-r .server ul li a em{
+	width: 274px;
+	padding-left: 20px;
+}/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮�*/
+.choice1{
+	z-index: 101;
+}
+.choice1 .select dt{
+	background:url(../images/select-bj.png) 345px 0 no-repeat;
+	width: 303px;
+	color: #666;
+	text-align: center;
+}
+.choice1 .select dd ul{
+	width:378px;
+	_width:368px;
+	text-align: center;
+	max-height:250px;
+	/*overflow:auto;*/
+}
+.choice1 .select dd ul li a{
+	line-height:28px;
+	display:block;
+	padding-left: 20px;
+    color: #666;
+}
+.choice1 .select dd ul li a:hover{
+	background:#fafafa;
+}
+.choice2{
+	z-index: 100;
+}
+/*footer*/
+.footerWrap{
+	height: auto;
+	margin-top: 60px;
+}
+.footer{
+	height: 44px;
+	line-height: 44px;
+	background: url(../images/icon6.png) repeat-x;
+	font-size: 13px;
+	color: #fff;
+}
+.footer h2{
+	float: left;
+	margin-left: 10px;
+}
+.footer p{
+	float: right;
+	margin-right: 10px;
+}
+.foo-info{
+	height: auto;
+	background: #656565;
+	margin-top: 10px;
+	padding: 25px 0;
+}
+.foo-info ul{
+	margin-left: 70px;
+	_margin-left:35px;
+}
+.foo-info ul li{
+	width: 84px;
+	height: 86px;
+	border-right: 1px solid #b2b2b2;
+	float: left;
+	margin-right: 28px;
+}
+.foo-info ul li a{
+	width: 100%;
+	margin-bottom: 12px;
+	display: inline-block;
+	font-size: 14px;
+	color: #cfcfcf;
+	height: 20px;
+	line-height: 20px;
+}
+.foo-info ul li a:hover{
+	color: #29A7B3;
+}
+.foo-info i{
+	width: 97px;
+	height: 97px;
+	display: inline-block;
+	margin-right: 70px;
+}
+.foo-info i img{
+	width: 97px;
+	height: 97px;
+	display: block;
+}
+.foo-text{
+	height: auto;
+	padding: 15px 0 8px;
+}
+.foo-text p{
+	font-size: 14px;
+	color: #666;
+	height: 26px;
+	line-height: 26px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.foo-text p a{
+	position: absolute;
+	top: 6px;
+	margin-left: 10px;
+}
+.foo-bom{
+	height: auto;
+	background: #0b6cb8;
+	padding: 12px 0;
+}
+.foo-bom .foo-nav{
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+.foo-bom .foo-nav a{
+	color: #fff;
+	display: inline-block;
+	margin: 0 12px 0 8px;
+}
+.foo-bom .foo-nav a:hover{
+	color: #dfdfdf;
+}
+.foo-bom  p{
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	color: #edf7ff;
+	margin-top: 12px;
+}
+
+
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮姑兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮得兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.mainDiv{
+	height: auto;
+	margin-top: 25px;
+}
+.mainDiv table{
+	float: left;
+	margin-top: 12px;
+	display: table;
+  	border-collapse: separate;
+  	border-spacing: 2px;
+  	border-color: gray;
+}
+.mainDiv table td{
+}
+.mainDiv table tr{
+	display: table-row;
+  	vertical-align: inherit;
+  	border-color: inherit;
+}
+
+/*left*/
+
+
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓鹿脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮姑兤捗⑩偓娄脙垄芒鈥毬呪€溍兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.situation{
+	width: 222px;
+	*width: 224px;
+	height: 84px;
+	padding: 0 17px;
+	border: 1px solid #eee;
+}
+.situation h2{
+	width: 100%;
+	height: 48px;
+	border-radius: 5px;
+	background: #0d5a96;
+	float: left;
+	overflow: hidden;
+	margin-top: 17px;
+}
+.situation h2 span{
+	width: 144px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	float: left;
+}
+.situation h2 i{
+	width: 78px;
+	*
+	width: 80px;
+	height: 48px;
+	display: inline-block;
+	text-align: center;
+	/* background: #29A7B3; */
+	float: left;
+	cursor: pointer;
+}
+.situation h2 i img{
+	display: block;
+	margin: 12px auto;
+}/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.nav-left{
+	height:100%;
+	width: 222px;
+	padding: 0 17px 0 16px;
+}
+.nav-left ul li{
+	width: 216px;
+	height: 46px;
+	margin-top: 15px;
+	border-left: 6px solid #0d5a96;
+}
+.nav-left ul li a{
+	width: 197px;
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #eee;
+	border-left: none;
+	display:inline-block ;
+	padding-left: 18px;
+	background: #f0f0f0;
+	color: #333;
+	font-size: 16px;
+}
+.nav-left ul li.cur a{
+	background: #0d5a96;
+	border: 1px solid #0d5a96;
+	border-left: none;
+	color: #fff;
+	-moz-transition:none;
+	-webkit-transition:none;
+	-o-transition:none;
+	transition:none;
+}
+/*right*/
+.current1{
+	width:1164px;
+}
+.current{
+	width:894px;
+	height: 84px;
+	padding: 0 17px;
+	border: 1px solid #eee;
+}
+.current h2{
+	width: 100%;
+	height: 26px;
+	margin-top: 29px;
+	font-size: 16px;
+	color: #848484;
+	float: left;
+}
+.current h2 i{
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+}
+.current h2 a{
+	height: 26px;
+	line-height: 26px;
+	color: #333;
+	display: inline-block;
+	float: left;
+}
+.current h2 a:hover,.current h2 a.cur{
+	color: #29A7B3;
+}
+.current h2 b{
+	height: 26px;
+	line-height: 26px;
+	font-size: 24px;
+	margin: 0 10px;
+	display: inline-block;
+	font-weight: normal;
+	float: left;
+}
+.current h2 span{
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	float: left;
+}
+.current1{
+	width:1164px ;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮裁兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮裁兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮棵兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.tr-ri{
+	width: 898px;
+	border: 1px solid #eee;
+	height: auto;
+	padding: 10px 15px 15px;
+	float: right;
+}
+.tr-ri h2{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 1px dashed #eee;
+	font-size: 18px;
+	color: #0d5a96;
+	margin-bottom: 16px;
+}
+.tr-ri p{
+	width: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+	margin-top:4px;
+	text-indent: 2em;
+}
+.trcontent table,.trcontent img{margin:0 auto;max-width:100%;height:auto;display:block}
+.trcontent table td p,.trcontent table td span{text-indent:0}
+
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.tr-ri ul li{
+	width: 100%;
+	height: 54px;
+	float: left;
+	border-bottom: 1px dashed #eee;
+}
+.tr-ri ul li a{
+	width: 98.5%;
+	height: 54px;
+	line-height: 54px;
+	padding-left: 1.5%;
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	color: #333;
+	background:#fff url(../images/ico8.png) 0 27px no-repeat;
+}
+.tr-ri ul li a em{
+	width:620px;
+	float: left;
+	display: inline-block;
+	overflow: hidden; /*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮�*/
+	text-overflow: ellipsis;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮澝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮矫兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮访兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭� 脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮伱兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮徝兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+	white-space: nowrap;/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮济兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮好兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏€櫭兟⒚⑩€毬偮姑兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭� 脙茠脝鈥櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮睹兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮嵜兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙垄芒鈧久偮�*/
+}
+.tr-ri ul li a span{
+	float: right;
+	display: inline-block;
+	font-size: 14px;
+	color: #666;
+	width: 80px;
+	text-align: right;
+}
+.tr-ri ul li a:hover{
+	color: #29A7B3;
+	background:#fdfdfd url(../images/ico8-hov.png) 0 27px no-repeat;
+}
+.tr-ri ul li a:hover span{
+	color: #29A7B3;
+}
+.tr-ri .page{
+	width: 100%;
+	height: 38px;
+	margin: 30px 0 10px;
+	position: relative;
+}
+.tr-ri .page ol{
+	width: 522px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -260px;
+}
+.tr-ri .page ol li{
+	float: left;
+}
+.tr-ri .page ol li a.num{
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #eee;
+	display: inline-block;
+	padding: 0 15px;
+	font-size: 16px;
+	color: #333;
+	margin-left: -1px;
+}
+.tr-ri .page ol li a.num1{
+	margin-left: 0;
+}
+.tr-ri .page ol li a.num:hover,.tr-ri .page ol li a.cur{
+	color: #fff;
+	background: #88929a;
+	border: 1px solid #88929a;
+}
+.tr-ri .page ol li a.prev,.tr-ri .page ol li a.next{
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	border: 1px solid #eee;
+	margin-right: 5px;
+	background: url(../images/prve.png) no-repeat;
+}
+.tr-ri .page ol li a.next{
+	background-position: right 0; 
+}
+.tr-ri .page ol li a.prev:hover,.tr-ri .page ol li a.next:hover{
+	background-position: 0 bottom;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+.tr-ri .page ol li a.next:hover{
+	background-position: right bottom;
+}
+.tr-ri .page ol li span{
+	font-size: 14px;
+	color: #333;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+	margin: 0 8px 0 20px;
+}
+.tr-ri .page ol li input{
+	width: 54px;
+	height: 36px;
+	line-height: 36px;
+	margin-right: 10px;
+	text-indent: 8px;
+	color: #333;
+	font-size: 14px;
+	border: 1px solid #eee;
+}
+/*脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮っ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮懊兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮该兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮惷兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮疵兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮幻兤捗嗏€櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓娄脙垄芒鈥毬呪€溍兤捗嗏€櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮γ兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗⑩偓拧脙鈥毭偮久兤捗嗏€櫭兟⒚⑩€毬偮γ兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ⑩偓艙脙茠脝鈥櫭冣€犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮┟兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮∶兤捗嗏€櫭兟⒚⑩€毬吢∶兤捗⑩偓拧脙鈥毭偮�*/
+.tr-ri1{
+	width:1168px;
+	margin-top: 15px;
+}
+.tr-ri1 ul li a{
+	width:1033px;
+}
+.tr-ri1 ul li a em{
+	width: 830px;
+}
+.tr-ri1 .tr-title{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px dashed #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.tr-ri1 .tr-title h1{
+	font-size: 24px;
+	color: #000;
+	width: 100%;
+	text-align: center;
+	line-height: 88px;
+}
+.tr-ri1 .tr-title h3{
+	font-size: 14px;
+	color: #666;
+	width: 100%;
+	text-align: center;
+}
+.tr-ri1 .tr-title h3 span{
+	width: 15px;
+	display: inline-block;
+}
+.tr-ri1 i{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin: 15px 0 11px;
+	text-align: center;
+}
+.tr-ri1 i img{
+	display: block;
+	margin: 0 auto;
+}
+.tr-bom{
+	width: 96;
+	padding:12px 2%;
+	border: 1px solid #eee;
+	border-top: none;
+	background: #fbfbfb;
+	
+}
+.tr-bom h5{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #666;
+}
+.tr-bom h5 a{
+	color: #333;
+}
+.tr-bom h5 a:hover{
+	color: #29A7B3;
+}

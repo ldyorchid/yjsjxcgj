@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>省级研究生教学成果奖申报</title>
+    <meta name="pageType" content="2">
+
+    <!-- 引入 Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- 引入 Vue 2 核心文件 -->
+    <script src="./js/vue.min.js"></script>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Font Awesome 图标库 -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 配置 Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aqnuBlue: '#0b6cb8',
+                        aqnuDarkBlue: '#0d5a96',
+                        aqnuLightBlue: '#e3f2fd',
+                        aqnuRed: '#f44336',
+                        aqnuGray: '#f5f5f5',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .aqnu-section {
+                @apply py-8 px-4 md:px-0;
+            }
+            .aqnu-title {
+                @apply text-xl md:text-2xl font-bold text-aqnuBlue mb-6 pb-2 border-b-2 border-aqnuBlue flex items-center;
+            }
+            .stat-card {
+                @apply bg-white rounded-lg shadow-md p-5 transition-all duration-300 hover:shadow-lg;
+            }
+            .stat-number {
+                @apply text-2xl md:text-3xl font-bold text-aqnuBlue mb-2;
+            }
+            .stat-label {
+                @apply text-sm text-gray-600;
+            }
+        }
+    </style>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            max-width: 100%;
+            overflow-x: hidden;
+            /* 修改为 hidden 防止水平滚动 */
+        }
+
+        /* Swiper 轮播图基本样式 */
+        .swiper-containerteach {
+            width: 100%;
+
+            /* 您可以根据需要调整高度 */
+            margin: 20px 0;
+            overflow: hidden;
+            min-height: 300px;
+
+        }
+
+        .swiper-containerteach .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            padding: 20px 0;
+            /* 添加过渡效果 */
+            transition: transform 0.4s ease;
+
+
+            /* 非激活状态半透明 */
+        }
+
+        /* 中间激活的幻灯片样式 */
+        .swiper-containerteach .swiper-slide-active {
+            transform: scale(1.5);
+            /* 激活状态放大1.5倍 */
+            opacity: 1;
+            /* 完全不透明 */
+            z-index: 1;
+            /* 确保放大的图片在最上层，不会被旁边的遮挡 */
+        }
+
+        .swiper-containerteach .swiper-slide img {
+            display: block;
+            width: 80%;
+
+            object-fit: cover;
+        }
+
+        .swiper-containerteach .swiper-slide-shadow-left {
+            background-image: none;
+
+        }
+
+        .swiper-containerteach .swiper-slide-shadow-right {
+            background-image: none;
+
+        }
+
+        .tab1 {
+            background-color: rgb(243, 243, 243);
+            width: 1200px;
+        }
+
+        .tab-card {
+            width: 380px;
+            height: 400px;
+            background-color: #FFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 10px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+            margin-top: 50px;
+        }
+
+        .tab-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .tab-card-header {
+            background-color: #0b6cb8;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid #0d5a96;
+            display: flex;
+            align-items: center;
+        }
+
+        .tab-card-body {
+            padding: 20px;
+            height: calc(100% - 80px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content-wrapper {
+            display: flex;
+            height: 100%;
+        }
+
+        .card-year {
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .year-red-bg {
+            width: 80px;
+            height: 30px;
+            background-color: #0066cc;
+            margin-bottom: 1px;
+        }
+
+        .year-text {
+            width: 80px;
+            height: 30px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .cd1 {
+            padding-bottom: 20px;
+        }
+
+        .cd1 p {
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-line-clamp: 10;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .card-content p {
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+        }
+
+        .card-actions {
+            margin-top: auto;
+            text-align: right;
+        }
+
+        .card-btn {
+            background-color: #0b6cb8;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+            margin-left: auto;
+        }
+
+        .card-btn:hover {
+            color: #f40;
+        }
+
+        .header-bar {
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo {
+            margin-right: 30px;
+        }
+
+        .header-logo img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.4;
+        }
+
+        /* 头部样式 */
+        .header {
+            margin: 20px auto;
+            width: 980px;
+        }
+
+        .fl {
+            float: left;
+        }
+
+
+
+
+
+
+        /* 导航栏容器：固定在顶部，占满宽度，背景色覆盖 */
+        .tab-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            /* 确保层级最高 */
+         
+            /* 与导航背景一致，避免空白 */
+        }
+
+        /* 导航菜单项：居中 + 水平排列 */
+        .tab-menu {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+               background-color: #0b6cb8;
+        }
+
+        .tab-item {
+            flex: 1;
+            text-align: center;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        /* 面包屑导航样式 */
+        .breadcrumb {
+            width: 980px;
+            margin: 15px auto;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .tab-item:hover {
+            background-color: #0d5a96;
+            color: white;
+        }
+
+        .tab-item.active {
+            background-color: #0d5a96;
+            color: white;
+        }
+
+        .tab-content {
+        max-width: 1200px;   /* 最大宽度1200px，小屏幕自动缩小 */
+        width: 100%;         /* 占满父容器宽度 */
+        margin: 0 auto;      /* 居中 */
+        min-height: 300px;
+        padding: 20px;
+        padding-top: 140px;  /* 预留“导航栏+横幅”的总高度，避免遮挡 */
+        }
+
+        .tab-panel {
+            line-height: 1.6;
+            background: white;
+        }
+
+
+        /* 响应式调整 */
+        @media (max-width: 1024px) {
+            .uni-banner,
+            .header,
+            .tab-menu,
+            .tab-content {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .swiper-containerteach {
+                height: 250px;
+            }
+
+            .tab-item {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .swiper-containerteach {
+                height: 200px;
+                margin-top: 0px !important;
+            }
+
+            .tab-menu {
+                flex-direction: column;
+            }
+
+            .tab-item {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .tab-item:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .pdfdiv {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 218px;
+        }
+
+        /* PDF展示样式 */
+        .pdf-container {
+            width: 100%;
+            height: calc(100vh - 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pdf-embed {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pdf-error {
+            position: absolute;
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .pdf-error a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .pdf-error a:hover {
+            text-decoration: underline;
+        }
+
+        /* 响应式调整 - PDF容器 */
+        @media (max-width: 1024px) {
+            .pdf-container {
+                height: calc(100vh - 120px);
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pdf-container {
+                height: calc(100vh - 100px);
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pdf-container {
+                height: calc(100vh - 80px);
+                padding: 5px;
+            }
+        }
+
+
+
+        /* 轮播图片：自适应容器，避免变形 */
+        .left.swiper-container .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            /* 保持图片比例，完整显示 */
+        }
+
+        .left.swiper-container {
+            width: 100%;
+        }
+
+        .left.swiper-container .swiper-slide img {
+            max-width: 100%;
+
+            /* 保持图片比例，完整显示 */
+        }
+
+        /* 整体容器样式 */
+        .award-page-container {
+            width: 100%;
+            max-width: 1200px;
+            /* 或者你需要的最大宽度 */
+            margin: 0 auto;
+            font-family: "Microsoft YaHei", "SimSun", sans-serif;
+            color: #333;
+        }
+
+        /* 1. 顶部标题栏样式 */
+        .header-bar {
+            background-color: #f3f3f3;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .red-marker {
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background-color: #0066cc;
+            /* 红色 */
+            margin-right: 10px;
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .page-metabox {
+
+            overflow-y: scroll;
+        }
+
+        /* 2. 面包屑和页面标题区域样式 */
+        .page-meta {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 0;
+
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .breadcrumb a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .award-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 15px 0;
+        }
+
+        .view-counter {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* 3. 内容区域样式 */
+        .content-section {
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .certificate-image {
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            /* 给图片一个浅色边框 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            /* 添加细微阴影以突出 */
+            margin-bottom: 50px;
+        }
+
+        /* 页面整体容器 */
+        .paper-list-page {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            font-family: "Microsoft YaHei", "SimSun", sans-serif;
+            background-color: #fff;
+            padding-bottom: 40px;
+            padding-top: 219px;
+
+        }
+
+        /* 1. 顶部灰色标题栏 */
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            /* 两端对齐 */
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            margin: 0 -20px 20px -20px;
+            /* 通过负外边距实现通栏效果 */
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .page-header .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .page-header .red-marker {
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background-color: #0066cc;
+            margin-right: 12px;
+        }
+
+        .page-header .page-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        /* 2. 面包屑导航 */
+        .breadcrumb {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. 内容列表 */
+        .list-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-content li {
+            padding: 15px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .list-content li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .list-content li a:hover {
+            color: #c00;
+        }
+
+        /* 4. 分页导航 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+        }
+
+        .page-btn {
+            display: inline-block;
+            padding: 8px 14px;
+            margin: 0 4px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+
+        }
+
+        .page-btn:hover {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+        }
+
+        .page-btn.active {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+            cursor: default;
+        }
+
+        /* 设置 Swiper 容器的尺寸 */
+        /* 设置 Swiper 容器的尺寸 */
+        .swiper-containerart {
+            width: 100%;
+            /* 必须设置一个高度！你可以根据需要调整 */
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .swiper-containerart img {
+            width: 200px;
+            padding: 10px;
+        }
+
+        .pointer {
+            cursor: pointer;
+            color: #363232;
+        }
+
+        .swleft {
+            width: 25%;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            min-height: 380px;
+            /* 与外层容器高度匹配 */
+        }
+
+        /* 媒体报道右侧轮播容器 */
+        .swright {
+            width: calc(75% - 40px);
+            margin-left: 40px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            min-height: 380px;
+        }
+
+        /* 
+   核心修复：为 swiper-wrapper 明确设置高度。
+   这会强制 Swiper 的包裹容器有足够的高度来容纳两行和它们之间的间距。
+*/
+        .swiper-containerart .swiper-wrapper {
+            height: 100%;
+            transition-timing-function: linear !important;
+        }
+
+        /* 设置每个幻灯片的样式 */
+        .swiper-containerart .swiper-slide {
+            /* 
+       现在高度计算更简单、更可靠了。
+       (容器高度 - 间距) / 行数 
+    */
+            height: calc((100% - 30px) / 2);
+
+            /* 
+       重要：移除之前可能添加的 margin-top。
+       因为 wrapper 高度已经正确，不再需要手动添加边距。
+    */
+            margin-top: 0 !important;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+
+
+            border-radius: 8px;
+        }
+
+        /* 自定义分页器小圆点的颜色 */
+    </style>
+    <style>
+         
+
+
+         
+
+        
+
+         
+
+        .uni-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }
+
+        .uni-eng {
+            font-size: 14px;
+            opacity: 0.9;
+            margin: 0 0 10px;
+        }
+
+        .award-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 8px;
+        }
+
+         .uni-banner {
+  max-width: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(11, 108, 184, 0.9), rgba(43, 142, 216, 0.6)),
+    url("./image/headbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 30px 20px 30px; /* 顶部padding=导航栏高(60px)+额外间距(20px) */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ 
+
+ 
+
+.topaward-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding : 10px 0 20px 0;
+}
+
+.project-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0.9;
+}
+
+        /* 响应式调整（小屏幕） */
+        @media (max-width: 768px) {
+            .banner-inner {
+                flex-direction: column;
+            }
+
+            .banner-logo {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .uni-name {
+                font-size: 24px;
+            }
+
+            .award-title {
+                font-size: 20px;
+            }
+        }
+
+
+        
+        
+
+        .banner-text {
+            flex: 1;
+
+
+          
+        }
+
+        .banner-inner {
+            display: flex;
+            align-items: center;
+            /* 垂直居中 */
+            justify-content: space-between;
+            /* 校徽居左，文字区域居右 */
+            width: 100%;
+        }
+
+        .banner-logo {
+            margin-right: 30px;
+            /* 校徽与文字间留间距 */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="tab-container">
+
+            <header class="uni-banner">
+                <div class="banner-inner">
+                    <!-- 校徽区域 -->
+                    <div class="banner-logo">
+                        <img src="./image/logo.png" alt="安庆师范大学校徽" class="logo-img">
+
+                    </div>
+                    <!-- 文字内容区域 -->
+                    <div class="banner-text">
+                        <!-- <h1 class="uni-name logo-text">安庆师范大学</h1>
+                    <p class="uni-eng uni-name-en">ANQING NORMAL UNIVERSITY</p> -->
+                        <h1 class="topaward-title"> 省级研究生教学成果奖申报 </h1>
+                        <p class="project-desc">扎根老区 服务需求：大别山区域高校信息类研究生培养模式创新实践</p>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="tab-menu">
+                <div v-for="tab in tabs" :key="tab.id" :class="['tab-item', { 'active': activeTab === tab.id }]"
+                    @click="switchTab(tab.id)">
+                    {{ tab.name }}
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Tab内容区域 -->
+        <div class="tab-content" v-if="activeTab === 1">
+            <div class="tab-panel">
+
+                <div class="text-center py-6" style="margin-top: 120px;">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold text-aqnuBlue leading-relaxed">
+                        扎根老区 服务需求：大别山区域高校信息类研究生培养模式创新实践
+                    </h2>
+                    <!-- <p class="text-gray-500 mt-3 text-sm">安徽省研究生教学成果奖申报项目 | 推荐序号：72001</p> -->
+                </div>
+
+                <div class="container mx-auto px-4 py-8" style="padding-top:0">
+
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-book mr-2"></i>项目概况
+                        </h3>
+                        <div class="bg-aqnuLightBlue/30 rounded-lg shadow-sm p-6">
+                            <p class="text-gray-700 leading-relaxed">
+                                面向国家"振兴"与"数字中国"双重战略，大别山革命老区传统产业（农业、旅游、制造业）的数字化转型、智能化升级以及新兴数字产业布局，急需一支既懂前沿信息技术又能扎根本土的高层次人才队伍，而传统研究生培养长期陷于"培养重理论、产业缺场景、思政轻落地"的三重断裂，导致知识链与产业链脱节，能力链与创新链错位，价值链与使命链悬浮。本成果以大别山革命老区特色资源与产业需求为原点、打造"知识为根、能力为体、素质为魂"的创新培养理念，建立以"扎根老区
+                                服务需求"为导向的大别山区域高校信息类研究生培养新范式。
+                            </p>
+                        </div>
+                    </section>
+
+
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-lightbulb-o mr-2"></i>核心创新
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div
+                                class="bg-aqnuLightBlue/20 rounded-lg  shadow-sm p-5 border-l-4 border-aqnuBlue hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-aqnuBlue/10 flex items-center justify-center text-aqnuBlue mr-3">
+                                        <i class="fa fa-rocket"></i>
+                                    </div>
+                                    <h4 class="font-semibold">创新理念</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">提出"知识为根、能力为体、素质为魂"三位一体培养理念，构建老区需求导向的信息类研究生培养新范式</p>
+                            </div>
+                            <div
+                                class="bg-aqnuLightBlue/20 rounded-lg  shadow-sm p-5 border-l-4 border-aqnuBlue hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-aqnuBlue/10 flex items-center justify-center text-aqnuBlue mr-3">
+                                        <i class="fa fa-cogs"></i>
+                                    </div>
+                                    <h4 class="font-semibold">创新模式</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">建立"高校-政府-企业-社区"协同育人机制，打造"大别山数字产业学院"等4个特色实践平台</p>
+                            </div>
+                            <div
+                                class="bg-aqnuLightBlue/20 rounded-lg  shadow-sm p-5 border-l-4 border-aqnuBlue hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-aqnuBlue/10 flex items-center justify-center text-aqnuBlue mr-3">
+                                        <i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <h4 class="font-semibold">创新体系</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">构建"红色铸魂、蓝色赋能、绿色实践"三维度课程体系，实施"导师团队+项目驱动"培养模式</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="aqnu-section">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- 1. 相关科技奖励 -->
+                            <div class="bg-aqnuLightBlue/30 rounded-lg p-4">
+                                <div class="flex justify-between   mb-4">
+                                    <h3 class="aqnu-title">
+                                        <i class="fa fa-star mr-2"></i>{{jsonData.tecprize.name}}
+                                    </h3>
+                                    <span
+                                        class="cursor-pointer text-aqnuBlue hover:text-aqnuDarkBlue transition-colors text-sm"
+                                        @click="tolist('tecprize')">更多>></span>
+                                </div>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="cursor-pointer"
+                                        v-for="(item, index) in jsonData.tecprize.list.slice(0, 5)"
+                                        @click="todetail(item,'tecprize')" :key="index">
+                                        {{item.title}}</li>
+                                    <!-- 实际数据替换此处 -->
+                                </ul>
+                            </div>
+
+
+
+                            <!-- 3. 教研项目 -->
+                            <div class="bg-aqnuLightBlue/30 rounded-lg p-4">
+                                <div class="flex justify-between   mb-4">
+                                    <h3 class="aqnu-title">
+                                        <i class="fa fa-flask mr-2"></i>{{jsonData.teachpro.name}}
+                                    </h3>
+                                    <a  
+                                        class="cursor-pointer text-aqnuBlue hover:text-aqnuDarkBlue transition-colors text-sm"
+                                        @click="tolist('teachpro')">更多>></a>
+                                </div>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="cursor-pointer"
+                                        v-for="(item, index) in jsonData.teachpro.list.slice(0, 5)"
+                                        @click="todetail(item,'teachpro')" :key="index">
+                                        {{item.title}}</li>
+
+                                </ul>
+                            </div>
+
+
+                            <!-- 5. 研究生获奖情况 -->
+                            <div class="bg-aqnuLightBlue/30 rounded-lg p-4">
+                                <div class="flex justify-between   mb-4">
+                                    <h3 class="aqnu-title">
+                                        <i class="fa fa-trophy mr-2"></i>{{jsonData.stuprize.name}}
+
+                                    </h3>
+                                    <a 
+                                        class="cursor-pointer text-aqnuBlue hover:text-aqnuDarkBlue transition-colors text-sm"
+                                        @click="tolist('stuprize')">更多>></a>
+                                </div>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="cursor-pointer"
+                                        v-for="(item, index) in jsonData.stuprize.list.slice(0, 5)"
+                                        @click="todetail(item,'stuprize')" :key="index">
+                                        {{item.title}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-graduation-cap mr-2"></i>{{jsonData.teachres.name}}
+                        </h3>
+                        <div class="swiper-containerteach mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" v-for="(slide,index) in jsonData.teachres.list" :key="index">
+                                    
+                                  
+                                    <img :src="slide.image" :alt=" slide.title">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-file-text mr-2"></i>{{jsonData.Patent.name}}
+                        </h3>
+                        <div class="swiper swiper-containerart">
+                            <!-- Swiper 的内容包裹器 -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" v-for="(slide,index) in jsonData.Patent.list" :key="index">
+                                    <img :src="slide.image" :alt=" slide.title">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-newspaper-o mr-2"></i>{{ jsonData.used.name}}
+                        </h3>
+
+                        <div class="flex" style="height:400px">
+                            <!-- 左侧轮播 -->
+                            <div class="left swiper-container swleft"
+                                style="width:25%; overflow:hidden;   background-color: #f9f9f9;  border-radius: 8px;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" v-for="(slide,index) in jsonData.used.list" :key="index">
+                                        <img :src="slide.image" :alt="slide.title">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 右侧内容 -->
+                            <div class="right swiper-container swright"
+                                style="width:calc(75% - 40px); margin-left: 40px; overflow:hidden;  background-color: #f9f9f9;   border-radius: 8px;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="width:100%" v-for="(slide,index) in jsonData.mediarep.list" :key="index"
+                                         >
+                                        <img :src="slide.image" :alt="slide.title">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-line-chart mr-2"></i>实施成效
+                        </h3>
+
+                        <!-- 成效数据统计 -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                            <div class="stat-card">
+                                <div class="stat-number">120+</div>
+                                <div class="stat-label">培养研究生数量</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">36</div>
+                                <div class="stat-label">获得省级以上学科竞赛奖项</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">18</div>
+                                <div class="stat-label">服务地方企业数量</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">共建产学研合作基地</div>
+                            </div>
+                        </div>
+
+                        <!-- 成效分类展示 -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- 研究生培养质量 -->
+                            <div class="bg-gray-50 rounded-lg shadow-sm p-6">
+                                <h4 class="font-semibold text-aqnuBlue mb-4">研究生培养质量</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check text-aqnuBlue mt-1 mr-2"></i>
+                                        <span>毕业生就业率达100%，其中85%以上在大别山区域就业创业</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check text-aqnuBlue mt-1 mr-2"></i>
+                                        <span>研究生发表高水平学术论文50余篇，授权发明专利15项</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check text-aqnuBlue mt-1 mr-2"></i>
+                                        <span>3名研究生获"安徽省优秀研究生"称号，5名获校"优秀毕业生"称号</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 区域产业服务 -->
+                            <div class="bg-gray-50 rounded-lg shadow-sm p-6">
+                                <h4 class="font-semibold text-aqnuBlue mb-4">区域产业服务</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check text-aqnuBlue mt-1 mr-2"></i>
+                                        <span>为大别山区20余家企业提供技术咨询和产品研发服务</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check text-aqnuBlue mt-1 mr-2"></i>
+                                        <span>开发"智慧农业"、"红色旅游"等系列信息平台10余个</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check text-aqnuBlue mt-1 mr-2"></i>
+                                        <span>举办大别山研究生教育论坛，推动校地协同发展</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 相关动态与机构 -->
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-calendar-check-o mr-2"></i>相关动态
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- 左侧：重点活动 -->
+                            <div>
+                                <h4 class="font-semibold text-aqnuBlue mb-4 flex items-center">
+                                    <i class="fa fa-list-alt mr-2"></i>近期活动
+                                </h4>
+                                <ul class="space-y-3 text-sm">
+                                    <li class="flex">
+                                        <i class="fa fa-circle text-aqnuBlue text-xs mt-1.5 mr-2"></i>
+                                        <span>第十一届安徽省大学生课外学术科技作品竞赛（2025.06）</span>
+                                    </li>
+                                    <li class="flex">
+                                        <i class="fa fa-circle text-aqnuBlue text-xs mt-1.5 mr-2"></i>
+                                        <span>全国高校AI大赛-大模型应用赛道（2025.07）</span>
+                                    </li>
+                                    <li class="flex">
+                                        <i class="fa fa-circle text-aqnuBlue text-xs mt-1.5 mr-2"></i>
+                                        <span>第一届大别山研究生教育高质量发展论坛（2023.10）</span>
+                                    </li>
+                                    <li class="flex">
+                                        <i class="fa fa-circle text-aqnuBlue text-xs mt-1.5 mr-2"></i>
+                                        <span>服务大别山革命老区高质量发展座谈会（2024.05）</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 右侧：主办与协同机构 -->
+                            <div>
+                                <h4 class="font-semibold text-aqnuBlue mb-4 flex items-center">
+                                    <i class="fa fa-building-o mr-2"></i>参与机构
+                                </h4>
+                                <!-- 主办单位 -->
+                                <div class="mb-5">
+                                    <h5 class="text-xs text-gray-500 uppercase mb-2">主办单位</h5>
+                                    <ul class="space-y-2 text-sm">
+                                        <li class="flex items-center">
+                                            <i class="fa fa-university text-aqnuBlue mr-2"></i>
+                                            <span>安庆师范大学 计算机与信息学院</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fa fa-university text-aqnuBlue mr-2"></i>
+                                            <span>安庆师范大学 研究生院</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h5 class="text-xs text-gray-500 uppercase mb-2">成果推广高校</h5>
+                                    <ul class="space-y-2 text-sm">
+                                        <li class="flex items-center">
+                                            <i class="fa fa-graduation-cap text-aqnuBlue mr-2"></i>
+                                            <span>安徽大学、安徽理工大学</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fa fa-graduation-cap text-aqnuBlue mr-2"></i>
+                                            <span>江西财经大学、安徽科技学院</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="aqnu-section">
+                        <h3 class="aqnu-title">
+                            <i class="fa fa-user-circle-o mr-2"></i>核心团队
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+
+                            <!-- 循环渲染每个团队成员 -->
+                            <div v-for="(person, index) in teachlist" :key="index" class="text-center">
+
+                                <!-- 
+                修复后的逻辑：
+                我们只对 <a> 标签做判断。
+                图标的 <div> 始终显示。
+            -->
+
+                                <!-- 如果 person.href 有效，就用 <a> 标签包住图标 -->
+                                <a v-if="person.href && person.href.trim() !== ''" :href="person.href" target="_blank"
+                                    class="cursor-pointer hover:opacity-80 transition-opacity">
+                                    <div
+                                        class="w-16 h-16 rounded-full bg-aqnuLightBlue/50 flex items-center justify-center text-aqnuBlue mx-auto mb-2">
+                                        <i class="fa fa-user text-xl"></i>
+                                    </div>
+                                </a>
+
+                                <!-- 否则 (v-else)，只显示图标，不用 <a> 标签包住 -->
+                                <div v-else
+                                    class="w-16 h-16 rounded-full bg-aqnuLightBlue/50 flex items-center justify-center text-aqnuBlue mx-auto mb-2">
+                                    <i class="fa fa-user text-xl"></i>
+                                </div>
+
+                                <!-- 姓名和职位 -->
+                                <h4 class="font-semibold text-sm">{{ person.name }}</h4>
+                                <p class="text-xs text-gray-500">{{ index === 0 ? '主持人/教授' : person.pos }}</p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div v-if="activeTab === 2" class="tab-panel pdfdiv">
+            <div class="pdf-container">
+                <!-- 新增：加载中提示 -->
+                <div v-show="pdfLoading" class="pdf-error">
+                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                    <p class="mt-4">PDF 文件较大，正在努力加载中...</p>
+                </div>
+
+                <!-- 修改：只有在加载完成且没有错误时才显示 embed -->
+                <embed v-show="!pdfLoading && !pdfError" :src="pdfUrl[0]" type="application/pdf" class="pdf-embed"
+                    @load="handlePdfLoad" @error="handlePdfError">
+                <!-- 修改：错误提示 -->
+                <div v-show="pdfError" class="pdf-error">
+                    <p>无法加载PDF文件，您可以 <a  @click.prevent="downloadPdf(0)">点击此处下载</a> 查看。</p>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="activeTab === 3" class="tab-panel pdfdiv">
+            <div class="pdf-container">
+                <!-- 新增：加载中提示 -->
+                <div v-show="pdfLoading" class="pdf-error">
+                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                    <p class="mt-4">PDF 文件较大，正在努力加载中...</p>
+                </div>
+
+                <!-- 修改：只有在加载完成且没有错误时才显示 embed -->
+                <embed v-show="!pdfLoading && !pdfError" :src="pdfUrl[1]" type="application/pdf" class="pdf-embed"
+                    @load="handlePdfLoad" @error="handlePdfError">
+                <!-- 修改：错误提示 -->
+                <div v-show="pdfError" class="pdf-error">
+                    <p>无法加载PDF文件，您可以 <a  @click.prevent="downloadPdf(1)">点击此处下载</a> 查看。</p>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="activeTab === 4" class="tab-panel pdfdiv">
+            <div class="award-page-container">
+
+                <div class="header-bar">
+                    <div class="header-content">
+                        <span class="red-marker"></span>
+                        <h1 class="header-title">{{listname}}</h1>
+                        <div style="flex:1;text-align:right">
+                            <a class="pointer" @click="back(2)">返回</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-metabox">
+                    <div class="page-meta">
+
+                        <h2 class="award-title">{{detailitem.title}}</h2>
+
+                    </div>
+
+
+                    <div class="content-section">
+                        <img :src="detailitem.image"  class="certificate-image">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="paper-list-page" v-if="activeTab === 5">
+            <!-- 1. 顶部灰色标题栏 -->
+
+            <div>
+                <div class="header-bar">
+                    <div class="header-content">
+                        <span class="red-marker"></span>
+                        <h1 class="header-title">{{listname}}</h1>
+                        <div style="flex:1;text-align:right">
+                            <a class="pointer" @click="back(1)">返回</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 内容列表 -->
+                <div class="list-content">
+                    <ul>
+                        <li class="cursor-pointer" v-for="(item,index) in listval[listindex]" @click="todetail(item)"
+                            :key="index">
+                            <a>{{item.title}}</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- 4. 分页导航 -->
+                <div class="pagination" v-if="listval.length>1">
+
+                    <a  v-for="pageNumber in listval.length" :key="pageNumber" class="page-btn"
+                        :class="{ 'active': listindex === (pageNumber - 1) }" @click="listindex=pageNumber - 1">
+                        {{ pageNumber }}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 底部固定信息 - 滚动到底部才显示 -->
+        <div v-show="showFooter||activeTab===2||activeTab===3||activeTab === 4"
+            class="text-center border-t border-b border-gray-200 bg-white z-50" style="position: fixed;bottom: 0;left: 0;right: 0; height: 40px;     padding-top: 1rem;
+    padding-bottom: 1rem; transition: opacity 0.3s ease;">
+            <p class="text-gray-500  text-sm">安徽省研究生教学成果奖申报项目 | 推荐序号：72001</p>
+        </div>
+
+    </div>
+
+    <!-- 引入 Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // 创建 Vue 实例
+        const app = new Vue({
+            el: '#app',
+            data: {
+                 
+                 
+                swiperInstance: null,
+                swiperInstancemedialeft: null,
+                swiperInstancemediaright: null,
+                swipercontainerart: null,
+                pdfLoading: false,
+                activeTab: 1,
+                tabs: [
+                    { id: 1, name: '首页' },
+                    { id: 2, name: '支撑材料' },
+                    { id: 3, name: '教学成果' },
+                ],
+
+                teachlist: [
+                    { name: '刘德阳', 'pos': '教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1191/13269.htm' },
+                    { name: '汪文明', 'pos': '副教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1201/13029.htm' },
+                    { name: '陈义仁', 'pos': '副教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1241/13309.htm' },
+                    { name: '蒋玉娥', 'pos': '副教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1201/13359.htm' },
+                    { name: '王远志', 'pos': '教授', 'href': 'https://jsjxy.aqnu.edu.cn/xygk/xrld.htm' },
+                    { name: '张友志', 'pos': '教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1231/15349.htm' },
+                    { name: '郑馨', 'pos': '副教授', 'href': 'https://jsjxy.aqnu.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1211&wbnewsid=12349&r=4701B09D-A4E2-4963-A7A4-7D30CE1C150B' },
+                    { name: '艾列富', 'pos': '教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1191/13209.htm' },
+                    { name: '李俊', 'pos': '一级演员', 'href': '' },
+                    { name: '汪洋', 'pos': '教授', 'href': 'https://jsjxy.aqnu.edu.cn/szdw/sjkxydsjjys.htm#' },
+                    { name: '王广军', 'pos': '副教授', 'href': 'https://jsjxy.aqnu.edu.cn/info/1241/13299.htm' }
+                ],
+                pdfUrl: ['./note/support.pdf', './note/result.pdf'],
+                pdfError: false,
+                showFooter: false, // 控制底部固定区域的显示/隐藏
+                jsonData: null,
+                listname: '',
+                listval: [],
+                listindex: 0,
+                ishome: true,
+                detailitem: null
+            },
+            mounted() {
+
+
+                this.fetchData()
+
+            },
+
+
+            methods: {
+                back(index) {
+                    if (index == 1 || this.ishome) {
+                        this.switchTab(1)
+                    } else {
+                        this.activeTab = 5
+                    }
+
+                },
+                todetail(item, name = '') {
+                    if (name) {
+                        this.listname = this.jsonData[name].name
+                    }
+
+                    print(this.detailitem)
+                    this.detailitem = item
+                    this.activeTab = 4
+
+                },
+                chunkArray(array, chunkSize) {
+                    const result = [];
+                    // 循环原始数组，步长为 chunkSize (10)
+                    for (let i = 0; i < array.length; i += chunkSize) {
+                        // 使用 .slice() 从当前位置截取 chunkSize 个元素
+                        const chunk = array.slice(i, i + chunkSize);
+                        // 将截取到的新数组（块）推入结果数组
+                        result.push(chunk);
+                    }
+                    return result;
+                },
+                tolist(name) {
+                    this.listname = this.jsonData[name].name
+                    this.listval = this.chunkArray(this.jsonData[name].list, 8)
+                    this.activeTab = 5
+                    this.ishome = false
+                },
+                async fetchData() {
+                    try {
+                        // 1. 使用 fetch 请求你的 JSON 文件
+                        const response = await fetch('./png/data.json'); // 确保路径正确
+
+                        // 2. 检查请求是否成功 (HTTP 状态码 200-299)
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+
+                        // 3. 将响应体解析为 JSON
+                        const jsonData = await response.json();
+
+                        // 4. 将解析后的数据赋值给 Vue data 中的对应属性
+                        this.jsonData = jsonData
+                        // 在 Vue 实例挂载后初始化 Swiper
+                        this.initSwiper();
+
+                        // 添加滚动事件监听
+                        window.addEventListener('scroll', this.handleScroll);
+                        // 初始检查滚动位置
+                        this.checkScrollPosition();
+                        console.log('数据加载成功:', jsonData);
+
+                    } catch (error) {
+                        console.error("无法加载数据文件:", error);
+                        // 在这里可以处理错误，比如在页面上显示一个错误提示
+                    }
+                },
+                pauseAllSwiper() {
+                    // 暂停“教学成果奖”轮播
+                    if (this.swiperInstance && this.swiperInstance.autoplay) {
+                        this.swiperInstance.autoplay.stop();
+                    }
+                    // 暂停“媒体报道左侧”轮播
+                    if (this.swiperInstancemedialeft && this.swiperInstancemedialeft.autoplay) {
+                        this.swiperInstancemedialeft.autoplay.stop();
+                    }
+                    // 暂停“媒体报道右侧”轮播
+                    if (this.swiperInstancemediaright && this.swiperInstancemediaright.autoplay) {
+                        this.swiperInstancemediaright.autoplay.stop();
+                    }
+                    // 暂停“发明专利”轮播
+                    if (this.swipercontainerart && this.swipercontainerart.autoplay) {
+                        this.swipercontainerart.autoplay.stop();
+                    }
+                },
+                initSwiper(isReinit = false) {
+                    this.$nextTick(() => {
+                        // 1. 重新初始化时，先销毁已有实例
+                        if (isReinit) {
+                            if (this.swiperInstance) {
+                                this.swiperInstance.destroy(true, true); // 完全销毁实例和DOM
+                                this.swiperInstance = null;
+                            }
+                            if (this.swiperInstancemedialeft) {
+                                this.swiperInstancemedialeft.destroy(true, true);
+                                this.swiperInstancemedialeft = null;
+                            }
+                            if (this.swiperInstancemediaright) {
+                                this.swiperInstancemediaright.destroy(true, true);
+                                this.swiperInstancemediaright = null;
+                            }
+                            if (this.swipercontainerart) {
+                                this.swipercontainerart.destroy(true, true);
+                                this.swipercontainerart = null;
+                            }
+                        }
+
+                        // 2. 重新创建所有轮播实例（保留原配置）
+                        // 教学成果奖轮播
+                        this.swiperInstance = new Swiper('.mySwiper', {
+                            effect: 'coverflow',
+                            grabCursor: true,
+                            centeredSlides: true,
+                            slidesPerView: 3,
+                            autoplay: { delay: 3000, disableOnInteraction: false },
+                            loop: true,
+                        });
+
+                        // 媒体报道左侧轮播
+                        this.swiperInstancemedialeft = new Swiper('.swleft', {
+                            slidesPerView: 1,
+                            autoplay: { delay: 3000, disableOnInteraction: false },
+                            loop: true,
+                        });
+
+                        // 发明专利轮播
+                        this.swipercontainerart = new Swiper(".swiper-containerart", {
+                            loop: true,
+                            freeMode: true,
+                            autoplay: { delay: 0, disableOnInteraction: false },
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                            speed: 5000,
+                            grid: { rows: 2, fill: 'row' },
+                        });
+
+                        // 媒体报道右侧轮播
+                        this.swiperInstancemediaright = new Swiper('.swright', {
+                            slidesPerView: 1,
+                            direction: 'vertical',
+                            autoplay: { delay: 3500, disableOnInteraction: false },
+                            loop: true,
+                        });
+                    });
+                },
+
+                handleClick(url) {
+                    window.open(url, '_blank');
+                },
+                switchTab(tabId) {
+                    // 1. 离开首页时，暂停所有 Swiper 实例
+                    if (this.activeTab === 1 && tabId !== 1) {
+                        this.pauseAllSwiper(); // 暂停轮播
+                    }
+
+                    // 2. 执行原标签切换逻辑
+                    this.listindex = 0;
+                    this.activeTab = tabId;
+                    this.pdfError = false;
+
+                    // 3. 切换到 PDF 标签的加载逻辑（保留原代码）
+                    if (tabId === 2 || tabId === 3) {
+                        this.pdfLoading = true;
+                        setTimeout(() => {
+                            this.pdfLoading = false;
+                        }, 2000);
+                    } else {
+                        this.pdfLoading = false;
+
+                    }
+
+                    // 4. 切换回首页时，重新初始化 Swiper
+                    if (tabId === 1) {
+                        this.ishome = true
+                        this.$nextTick(() => { // 确保 DOM 已显示
+                            this.initSwiper(true); // 传入参数标记“重新初始化”
+                        });
+                    }
+                },
+                handlePdfLoad() {
+                    // 这个事件可以用于确认PDF加载完成
+                    console.log('PDF loaded successfully.');
+                    this.pdfLoading = false;
+                    this.pdfError = false;
+                },
+
+                // --- 修改 handlePdfError 方法 ---
+                handlePdfError() {
+                    console.error('PDF failed to load.');
+                    this.pdfLoading = false; // 加载失败，隐藏加载动画
+                    this.pdfError = true;   // 显示错误信息
+                },
+
+                downloadPdf(index) {
+                    window.open(this.pdfUrl[index], '_blank');
+                },
+
+
+                // 处理滚动事件
+                handleScroll() {
+                    this.checkScrollPosition();
+                },
+
+                // 检查滚动位置，判断是否显示底部固定区域
+                checkScrollPosition() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const scrollHeight = document.documentElement.scrollHeight;
+                    const clientHeight = document.documentElement.clientHeight;
+
+                    // 当滚动到底部或接近底部时显示
+                    this.showFooter = (scrollTop + clientHeight >= scrollHeight - 100);
+                }
+            },
+            computed: {
+
+                currentTabName() {
+                    const tab = this.tabs.find(tab => tab.id === this.activeTab);
+                    return tab ? tab.name : '';
+                }
+            },
+            beforeDestroy() {
+
+                if (this.swiperInstance) {
+                    this.swiperInstance.destroy(true, true);
+                    this.swiperInstance = null;
+                }
+                // 移除滚动事件监听
+                window.removeEventListener('scroll', this.handleScroll);
+            }
+        });
+    </script>
+</body>
+
+</html>
